@@ -39,7 +39,7 @@ This repository contains the implementation of an efficient and scalable glioma 
 
 ```
 glioma-unet-brats2020/
-├── gioma.py                        # Main training script (Windows/Linux)
+├── glioma.py                        # Main training script (Windows/Linux)
 ├── glioma_colab_final_v2.ipynb     # Google Colab notebook (binary model)
 ├── glioma_multiclass_colab.ipynb   # Google Colab notebook (multiclass model)
 └── README.md
