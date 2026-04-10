@@ -20,10 +20,10 @@ This repository contains the implementation of an efficient and scalable glioma 
 
 | Metric | Result |
 |--------|--------|
-| DSC | 0.901 |
-| Sensitivity | 0.909 |
-| Specificity | 0.999 |
-| Hausdorff Distance | 2.11 mm |
+| DSC | 0.884 |
+| Sensitivity | 0.851 |
+| Specificity | 0.992 |
+| Hausdorff Distance | 4.2 mm |
 
 ### Multiclass Segmentation (per subregion)
 
@@ -39,7 +39,7 @@ This repository contains the implementation of an efficient and scalable glioma 
 
 ```
 glioma-unet-brats2020/
-├── glioma.py                        # Main training script (Windows/Linux)
+├── gioma.py                        # Main training script (Windows/Linux)
 ├── glioma_colab_final_v2.ipynb     # Google Colab notebook (binary model)
 ├── glioma_multiclass_colab.ipynb   # Google Colab notebook (multiclass model)
 └── README.md
@@ -140,4 +140,3 @@ This work was supported by:
 - FONDECYT Regular (Grant No. 1261732/2026)
 - ANID/FIU (Grant No. 137139)
 - ANID BECAS/DOCTORADO NACIONAL 21242235
-- Vicerrectoría de Postgrado, Universidad de Santiago de Chile, through Becas 2026
