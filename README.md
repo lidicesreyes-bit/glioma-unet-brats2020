@@ -1,8 +1,13 @@
 # Glioma Segmentation with 2D U-Net + BraTS2020
 
-**Paper:** *Optimizing Magnetic Resonance Image Segmentation Through Scalable Deep Learning and Hierarchical Data Management*
+Code for our paper published at **CSNDSP 2026** (IEEE).
 
-**Authors:** Lídices Reyes-Hung, Gabriel Trinke, Ismael Soto
+**Paper:** *Optimizing Magnetic Resonance Image Segmentation Through Scalable Deep Learning and Hierarchical Data Management*
+**Venue:** 2026 15th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Edinburgh, United Kingdom, pp. 1-6
+**DOI:** [10.1109/CSNDSP68462.2026.11654508](https://doi.org/10.1109/CSNDSP68462.2026.11654508)
+
+**Paper authors:** Lídices Reyes-Hung, Gabriel Trinke, Ismael Soto, J. Serey
+**Code:** Lídices Reyes-Hung
 **Institution:** University of Santiago, Chile (USACH)
 **Contact:** lidices.reyes@usach.cl · gabriel.trinke@usach.cl · ismael.soto@usach.cl
 
@@ -15,6 +20,8 @@ This repository contains the implementation of an efficient and scalable glioma 
 ---
 
 ## Results
+
+Reported on <!-- COMPLETAR: conjunto y partición usados para evaluar -->.
 
 ### Binary Segmentation (main model)
 
@@ -39,9 +46,10 @@ This repository contains the implementation of an efficient and scalable glioma 
 
 ```
 glioma-unet-brats2020/
-├── gioma.py                        # Main training script (Windows/Linux)
+├── glioma.py                       # Main training script (Windows/Linux)
 ├── glioma_colab_final_v2.ipynb     # Google Colab notebook (binary model)
 ├── glioma_multiclass_colab.ipynb   # Google Colab notebook (multiclass model)
+├── requirements.txt
 └── README.md
 ```
 
@@ -62,7 +70,7 @@ numpy
 
 Install dependencies:
 ```bash
-pip install tensorflow h5py nibabel scikit-learn scipy matplotlib numpy
+pip install -r requirements.txt
 ```
 
 ---
@@ -91,7 +99,7 @@ Each case contains 4 co-registered MRI modalities:
 ### Option 2 — Local (Windows/Linux)
 ```bash
 pip install -r requirements.txt
-python gioma.py
+python glioma.py
 ```
 
 ---
@@ -125,18 +133,7 @@ python gioma.py
 
 If you use this code in your research, please cite:
 
-```
-Reyes-Hung, L., Trinke, G., & Soto, I. (2026).
-Optimizing Magnetic Resonance Image Segmentation Through 
-Scalable Deep Learning and Hierarchical Data Management.
-University of Santiago, Chile.
-```
-
----
-
-## Acknowledgments
-
-This work was supported by:
-- FONDECYT Regular (Grant No. 1261732/2026)
-- ANID/FIU (Grant No. 137139)
-- ANID BECAS/DOCTORADO NACIONAL 21242235
+```bibtex
+@inproceedings{reyeshung2026glioma,
+  author    = {Reyes-Hung, L. and Trinke, G. and Soto, I. and Serey, J.},
+  title     = {Optimizing Magnetic
