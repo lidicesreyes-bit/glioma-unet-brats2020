@@ -145,7 +145,7 @@ python glioma.py
 
 ## Evaluation metrics
 
-Dice Similarity Coefficient (DSC), Sensitivity, Specificity and Hausdorff Distance, computed at voxel level. Predictions are binarized with a fixed threshold of 0.5.
+Dice Similarity Coefficient (DSC), Sensitivity, Specificity and Hausdorff Distance. Metrics are computed per slice and averaged. The Hausdorff distance is computed with `scipy.spatial.distance.directed_hausdorff` over pixel coordinates of the resized 128×128 grid; no voxel-spacing conversion is applied in the code. Predictions are binarized with a fixed threshold of 0.5. Slices where both the ground truth and the prediction are empty are excluded from the Hausdorff average.
 
 ---
 
