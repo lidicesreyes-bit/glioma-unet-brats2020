@@ -89,7 +89,7 @@ Class imbalance in the training set: background 98.24%, peritumoral edema 0.98%,
 ## Requirements
 
 ```
-Python 3.10+
+Python 3.9+
 TensorFlow 2.19
 h5py · nibabel · scikit-learn · scipy · matplotlib · numpy
 ```
