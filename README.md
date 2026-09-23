@@ -173,6 +173,10 @@ Dice Similarity Coefficient (DSC), Sensitivity, Specificity and Hausdorff Distan
   doi       = {10.1109/CSNDSP68462.2026.11654508}
 }
 ```
+---
+## License
+
+MIT License — see [LICENSE](LICENSE).
 
 ---
 
