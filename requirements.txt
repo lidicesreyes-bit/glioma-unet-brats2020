@@ -1,0 +1,7 @@
+tensorflow==2.19
+h5py
+nibabel
+scikit-learn
+scipy
+matplotlib
+numpy
