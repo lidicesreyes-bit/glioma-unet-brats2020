@@ -38,6 +38,8 @@ from scipy.spatial.distance import directed_hausdorff
 # CONFIG
 # ─────────────────────────────────────────────
 DATA_DIR = r"D:\LIDICES\PYTHON\bigdata\gabriel\brats2020\BraTS2020_TrainingData\MICCAI_BraTS2020_TrainingData"
+# El paper se entrenó con BATCH_SIZE = 16 en Tesla T4 (ver glioma_colab_final_v2.ipynb).
+# Aquí queda en 8 para GPUs con menos memoria.
 BATCH_SIZE = 8
 EPOCHS = 15
 LR = 1e-3
