@@ -129,6 +129,7 @@ python glioma.py
 - Output: sigmoid (binary) or per-class sigmoid (multiclass)
 - Input: 128×128×4 · ~7.8M trainable parameters
 - Callbacks: ModelCheckpoint (best val DSC), ReduceLROnPlateau, EarlyStopping
+- Seeds: `SEED = 42` fixes the train/val/test split, the generator shuffling and weight initialization. The published run predates the shuffling and weight seeds, so re-running gives results close to, but not identical to, the reported metrics.
 
 | Setting | Notebooks (paper) | `glioma.py` (local) |
 |---------|-------------------|---------------------|
