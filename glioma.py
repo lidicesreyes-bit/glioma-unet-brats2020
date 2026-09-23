@@ -13,11 +13,6 @@ for d in DLL_DIRS:
             pass
         os.environ["PATH"] = d + ";" + os.environ["PATH"]
 
-
-os.add_dll_directory(r"C:\Users\Lidices\AppData\Local\Programs\Python\Python39\Lib\site-packages\torch\lib")
-os.environ["PATH"] = r"C:\Users\Lidices\AppData\Local\Programs\Python\Python39\Lib\site-packages\torch\lib;" + os.environ["PATH"]
-
-
 import glob
 import numpy as np
 import h5py
@@ -45,6 +40,9 @@ EPOCHS = 15
 LR = 1e-3
 IMG_SIZE = 128
 SEED = 42
+
+np.random.seed(SEED)        # barajado del generador
+tf.random.set_seed(SEED)    # inicialización de pesos y dropout
 
 # ─────────────────────────────────────────────
 # BUSCAR ARCHIVOS H5
